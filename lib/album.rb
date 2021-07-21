@@ -58,4 +58,8 @@ class Album
     # [[album], [album2]]
     # [album], [album]
   end
+
+  def songs
+    Song.find_by_album(self.id)
+  end
 end

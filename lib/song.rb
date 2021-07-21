@@ -52,4 +52,8 @@ class Song
     end
     songs
   end
+
+  def album
+    Album.find(self.album_id)
+  end
 end
